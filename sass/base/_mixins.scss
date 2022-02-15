@@ -1,0 +1,9 @@
+@mixin heading2 {
+  color: $color-primary;
+  font-weight: 300;
+  font-size: 2.5em;
+}
+@mixin headings {
+  font-weight: 300;
+  text-align: center;
+}

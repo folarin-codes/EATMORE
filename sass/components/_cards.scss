@@ -1,0 +1,62 @@
+.cards {
+  display: flex;
+  justify-content: space-between;
+
+  img {
+    width: 18em;
+    height: 13em;
+    border-radius: 7px;
+  }
+
+  &-time {
+    margin: 1em 0 2em 1em;
+  }
+
+  a {
+    color: $color-primary;
+    border-bottom: solid 1px $color-primary;
+    font-size: 1.3em;
+    margin-left: 3em;
+    padding-bottom: 0.25em;
+    text-decoration: none;
+  }
+  h3 {
+    text-align: center;
+    margin-top: 1em;
+  }
+  &-time p {
+    margin-bottom: 2em;
+  }
+  div p img {
+    display: inline-block;
+    margin-right: 1em;
+    height: 1em;
+    width: 1em;
+  }
+
+  div {
+    background-color: $card-bg-color;
+    width: 18em;
+    border-radius: 7px;
+    transition: linear all 0.4s;
+  }
+
+  &-icon {
+    display: inline-block;
+    margin-bottom: 2em;
+    padding-left: 1em;
+    padding-right: 0.5em;
+  }
+  &-icon img {
+    height: 1em;
+    width: 1em;
+  }
+}
+
+div .cards-one:hover,
+div .cards-two:hover,
+div .cards-three:hover {
+  transform: translateY(-1.2em);
+  cursor: pointer;
+  transition: all linear 0.4s;
+}

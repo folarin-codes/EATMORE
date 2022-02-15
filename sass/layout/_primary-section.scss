@@ -1,0 +1,26 @@
+.primary-section {
+  background-color: $bg-color-light;
+  padding: 5em 7em;
+
+  &-main {
+    display: flex;
+    justify-content: space-between;
+    gap: 10em;
+
+    h2 {
+      color: $color-white;
+      margin-bottom: 2em;
+      font-weight: 300;
+    }
+    p {
+      font-weight: 100;
+      line-height: 1.5;
+      color: $color-white;
+    }
+
+    &-image img {
+      height: 30em;
+      width: 25em;
+    }
+  }
+}

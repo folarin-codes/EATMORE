@@ -1,0 +1,73 @@
+.main-section {
+  padding: 5em 7em;
+  background-color: $bg-color-light;
+  color: $color-white;
+  img {
+    height: 250px;
+    width: 200px;
+  }
+  &1 {
+    display: flex;
+    gap: 7em;
+    justify-content: space-between;
+
+    &-images {
+      display: flex;
+      gap: 1em;
+    }
+
+    &-images1 {
+      margin-top: 2em;
+      display: flex;
+      gap: 1em;
+      flex-direction: column;
+    }
+    &-images2 {
+      display: flex;
+      gap: 1em;
+      flex-direction: column;
+    }
+  }
+  &-story {
+    margin-top: 10em;
+    h2 {
+      @include heading2;
+    }
+    p {
+      margin-top: 1em;
+      margin-bottom: 2em;
+      font-weight: 100;
+      line-height: 1.5;
+    }
+    .link {
+      :hover {
+        color: $color-primary;
+        transition: all linear 0.2s;
+      }
+
+      a {
+        font-size: 1em;
+        font-weight: bold;
+        color: $color-white;
+        transition: all linear 0.2s;
+        text-decoration: none;
+        :hover {
+          cursor: pointer;
+        }
+      }
+    }
+  }
+  &-secondary > {
+    h2 {
+      @include heading2;
+      text-align: center;
+      margin-top: 2em;
+    }
+    p {
+      text-align: center;
+      margin-top: 1em;
+      margin-bottom: 4em;
+      font-weight: 100;
+    }
+  }
+}

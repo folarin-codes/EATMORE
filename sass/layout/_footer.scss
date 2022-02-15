@@ -1,0 +1,42 @@
+.footer {
+  padding: 5em 7em 3em 7em;
+  background-color: $bg-color-dark;
+  color: $color-white;
+  font-weight: 300;
+
+  &-footer {
+    display: flex;
+    justify-content: space-between;
+
+    h3 {
+      font-weight: 300;
+      margin-bottom: 2em;
+    }
+    p {
+      margin-bottom: 2em;
+    }
+    input {
+      background-color: $bg-color-dark;
+      height: 2.635em;
+      border: 1px solid $color-white;
+      padding-left: 7px;
+      color: white;
+
+      :focus-visible,
+      :focus {
+        outline: 1px solid $color-primary;
+        border: 1px solid $color-primary;
+      }
+    }
+    input[type="submit"] {
+      background-color: $color-primary;
+      border: 1px solid $color-primary;
+      width: calc(2vw + 5em);
+      color: black;
+      margin-left: -0.39em;
+      padding: 0;
+      font-weight: bold;
+      text-align: center;
+    }
+  }
+}
